@@ -56,6 +56,28 @@ men med hjälp av ai och sunt förnuft förstod jag hur jag skulle åtgärda det
 
 
 
+\# Arbetslogg --# 2026-05-12
+
+\*\*Arbetat med: uppgift 1. del 3.6\*\*
+
+\*\* Vad jag gjorde: Svarade på frågorna från 3.6 och gjorde olika kommandon samt sökte upp hur det kan se ut om det inte funkade 
+
+\*\*Problem och lösningar: inga riktiga problem \*\*
+
+\*\*Beslut jag fattade: inga riktiga beslut \*\*
+
+\*\*Källor jag använde: copilot ai,\*
+
+
+
+
+
+
+
+
+
+
+
 
 
 \# Del 1
@@ -116,7 +138,7 @@ skärmdump-6 (screenshots)
 
 
 
-frågor och svar del 3.4.3
+\## frågor och svar del 3.4.3
 
 1. networkmanager.service är Linux nätverkshanterare och sköter saker som dhcp och vpn.
 2. standard inställningen för ssh är port 22.
@@ -127,6 +149,50 @@ frågor och svar del 3.4.3
 skärmdump-7 (screenshots)
 
 
+
+\## felsökning
+
+skärmdump-8 (screenshots)
+
+1. i outputen ser man att ssh är enabled och Active running i grönt text det betyder att porten är öppen och ssh är aktivt
+
+2\. om det istälelt att stått ssh disabled och inactive
+
+3\. man startar ssh enkelt genom att köra kommandot sudo systemctl start sshd
+
+
+
+skärmdump-9 (screenshots)
+
+1. outputen man ser är hostnamet som är angivet för servern men också operativ system och datorns hårdvara
+2. om hostname var felaktigt satt hade man sett att det var ett annat hostname än planerat 
+3. för att ändra hostname på datorn gör du bara följande kommando "sudo hostnamectl set-hostname nyttnamn"
+
+
+
+skärmdump-10 (screenshots)
+
+1. jag ser ip adressen 192.168.68.57
+2. tex om din server eller dator inte får kontakt med dhcp servern kan du få ip adressen 169.254.0.0
+3. med kommandot "sudo nmcli con mod ens33 ipv4.addresses (din ip adress)" ändrar du snabbt din ip adress
+
+
+
+skärmdump-11 (screenshots)
+
+1. ja allt stämmer överens med det jag valde på denna server då jag valde att köra med standard inställningarna
+2. innehållet är fel tex du går in på partitionen men filerna som ska vara där är inte där utan istället på något annat ställe
+
+3\. Ta bort partitionerna och lägg till nya på rätt ställe, men se till att du inte gör det förhastat då filer kan försvinna i processen
+
+
+
+skärmdump-12 (screenshots)
+
+1. jag ser att det inte funkar eftersom vi inte har startat upp idm servern eller dc servern
+2. något som tyder på att anslutningen är bruten är att outputen säger namn eller tjänst okänd 
+
+3\. min ip adress och personens ip adress sen hade jag kontrollerat firewallen
 
 
 
