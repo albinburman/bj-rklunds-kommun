@@ -40,6 +40,22 @@ men med hjälp av en klasskamrat förstod jag vad jag ska lägga vikt på osv.\*
 
 
 
+\# Arbetslogg --# 2026-05-11
+
+\*\*Arbetat med: uppgift 1 del 2 och 3\*\*
+
+\*\* Vad jag gjorde: konfigurerade redhat skicka över mitt bash script från powershell genom ssh.
+
+\*\*Problem och lösningar: Svårt att få till överföringen av bash scriptet från Powershell till srv-linux01 då jag hade problem med brandväggen och att jag gjort en txt fil på powershell
+
+men med hjälp av ai och sunt förnuft förstod jag hur jag skulle åtgärda detta.\*\*
+
+\*\*Beslut jag fattade:\*\*
+
+\*\*Källor jag använde: copilot ai, redhat forum \*\*
+
+
+
 
 
 \# Del 1
@@ -84,7 +100,37 @@ swap 2GB
 
 
 
-\# Del 3 — Linux-serverinstallation -
+\# Del 3 — Linux-serverinstallation 
+
+jag väljer att köra mina virtuella maskiner på ett bridged nätverk så att alla kan kommunicera med varandra enkelt. 
+
+
+
+skärmdump-3 (screenshots)
+
+skärmdump-4 (screenshots)
+
+skärmdump-5 (screenshots)
+
+skärmdump-6 (screenshots)
+
+
+
+frågor och svar del 3.4.3
+
+1. networkmanager.service är Linux nätverkshanterare och sköter saker som dhcp och vpn.
+2. standard inställningen för ssh är port 22.
+3. om man stängde av en kritisk tjänst som tex networkmanager så skulle ingen som var kopplad till servern få en ip adress och då alltså inte kunna använda internet.
+
+
+
+skärmdump-7 (screenshots)
+
+
+
+
+
+
 
 \# Del 4 — Windows Server och Active Directory -
 
